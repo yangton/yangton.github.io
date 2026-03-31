@@ -53,7 +53,7 @@ theme_mode:
 
 cdn:
 
-avatar:
+avatar: /assets/img/logo.png
 
 social_preview_image:
 

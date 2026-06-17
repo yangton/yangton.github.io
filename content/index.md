@@ -1,5 +1,5 @@
 ---
-title: "Yangton // Security Researc"
+title: "Yangton // Security Research"
 ---
 
 <div class="portfolio-wrapper">

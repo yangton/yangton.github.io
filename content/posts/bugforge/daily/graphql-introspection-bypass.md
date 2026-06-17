@@ -8,7 +8,6 @@ tags:
   - graphql
   - bfla
   - api-security
-  - 
 ---
 
 > [!info] Target / Context

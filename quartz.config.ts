@@ -4,7 +4,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Yangton // Security Research",
-    pageTitleSuffix: "",
+    pageTitleSuffix: " · AppSec",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -13,12 +13,12 @@ const config: QuartzConfig = {
     locale: "en-US",
     baseUrl: "yangton.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Space Grotesk",
+        header: "IBM Plex Mono",
         body: "Inter",
         code: "JetBrains Mono",
       },
@@ -30,7 +30,7 @@ const config: QuartzConfig = {
           darkgray: "#3d3050",
           dark: "#1a0f2e",
           secondary: "#7B5EA7",
-          tertiary: "#9b7cc4",
+          tertiary: "#a487d4",
           highlight: "rgba(123, 94, 167, 0.15)",
           textHighlight: "#7B5EA755",
         },

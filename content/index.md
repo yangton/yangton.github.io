@@ -5,21 +5,29 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 
 <div class="portfolio-wrapper">
 
-  <nav class="top-nav">
-    <span class="nav-logo">yangton</span>
-    <div class="nav-links">
-      <a href="/Write-ups">Write-ups</a>
-      <a href="/Methodology">Methodology</a>
-      <a href="/Insights">Insights</a>
-    </div>
-    <div class="nav-socials">
-      <a href="https://github.com/yangton" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </nav>
-
   <div class="hero">
-    <h1 class="hero-title">AppSec Engineer <span class="hero-break">&amp;</span> Penetration Tester</h1>
-    <p class="hero-sub">Write-ups, methodology, and offensive security research from real engagements and lab work.</p>
+    <p class="hero-eyebrow">Offensive Security</p>
+    <h1 class="hero-title">yangton</h1>
+    <p class="hero-sub">AppSec Engineer &amp; Penetration Tester</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-number">3</span>
+      <span class="stat-label">Years Exp</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">2</span>
+      <span class="stat-label">Certs</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">HTB</span>
+      <span class="stat-label">Active</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-number">Web</span>
+      <span class="stat-label">Focus</span>
+    </div>
   </div>
 
   <div class="cert-row">
@@ -27,120 +35,133 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
     <span class="cert-badge achieved">CWES</span>
     <span class="cert-badge pending">CPTS</span>
     <span class="cert-badge pending">OSWA</span>
-    <span class="cert-meta">3 years experience · HTB active</span>
   </div>
 
-  <section class="index-section">
-    <h2 class="section-label">Explore</h2>
+  <h3 class="index-header">Directory Index</h3>
 
-    <div class="index-list">
-      <a href="/Write-ups" class="index-row">
-        <span class="index-title">Write-ups</span>
-        <span class="index-desc">Lab post-mortems, CTF solutions, and exploit chain analysis.</span>
-      </a>
-      <a href="/Methodology" class="index-row">
-        <span class="index-title">Methodology</span>
-        <span class="index-desc">Personal pentesting workflows, checklists, and mindmaps.</span>
-      </a>
-      <a href="/Insights" class="index-row">
-        <span class="index-title">Insights</span>
-        <span class="index-desc">Notes on the current threat landscape and AppSec trends.</span>
+  <div class="index-grid">
+    <div class="index-card">
+      <a href="/Write-ups" class="index-link-wrapper">
+        <div class="index-title">Write-ups <span class="arrow">→</span></div>
+        <div class="index-desc">Lab post-mortems, CTF solutions, and exploit chain analysis.</div>
       </a>
     </div>
-  </section>
+    <div class="index-card">
+      <a href="/Methodology" class="index-link-wrapper">
+        <div class="index-title">Methodology <span class="arrow">→</span></div>
+        <div class="index-desc">Personal pentesting workflows, checklists, and mindmaps.</div>
+      </a>
+    </div>
+    <div class="index-card">
+      <a href="/Insights" class="index-link-wrapper">
+        <div class="index-title">Insights <span class="arrow">→</span></div>
+        <div class="index-desc">Notes on the current threat landscape and AppSec trends.</div>
+      </a>
+    </div>
+  </div>
 
 </div>
 
 <style>
 .portfolio-wrapper {
   color: var(--dark);
-  max-width: 760px;
+  max-width: 720px;
 }
 
-/* nav */
-.top-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0 2.5rem 0;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nav-logo {
-  font-family: var(--codeFont);
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--darkgray);
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a,
-.nav-socials a {
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--gray);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.nav-links a:hover,
-.nav-socials a:hover {
-  color: var(--secondary);
-}
-
-/* hero — duży, odważny nagłówek jako centralny punkt strony */
+/* hero */
 .hero {
-  padding: 1rem 0 2.5rem 0;
+  padding: 0 0 2rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.hero-eyebrow {
+  font-family: var(--codeFont);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 0.6rem 0;
 }
 
 .hero-title {
-  font-size: 3.4rem;
+  font-size: 3rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  margin: 0 0 1.25rem 0;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem 0;
   color: var(--darkgray);
-}
-
-.hero-break {
-  color: var(--secondary);
+  line-height: 1;
 }
 
 .hero-sub {
-  font-size: 1.1rem;
   color: var(--gray);
-  max-width: 480px;
-  line-height: 1.55;
+  font-size: 1.1rem;
   margin: 0;
 }
 
-/* certifications inline z metadanymi — jeden rząd, bez boxów-statystyk */
+/* stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.stat-card {
+  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
+  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
+  transform: translateY(-2px);
+}
+
+.stat-number {
+  font-family: var(--codeFont);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+/* certifications */
 .cert-row {
   display: flex;
-  align-items: center;
   gap: 0.6rem;
   flex-wrap: wrap;
-  margin: 0 0 3rem 0;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--lightgray);
+  margin: 0 0 2.5rem 0;
 }
 
 .cert-badge {
   font-family: var(--codeFont);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  padding: 0.3rem 0.75rem;
-  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
 }
 
 .cert-badge.achieved {
-  border: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
+  border: 1px solid var(--secondary);
   color: var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
 }
 
 .cert-badge.pending {
@@ -148,75 +169,70 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
   color: var(--gray);
 }
 
-.cert-meta {
-  font-size: 0.82rem;
-  color: var(--gray);
-  margin-left: 0.5rem;
-}
-
-/* index section */
-.section-label {
-  font-size: 0.78rem;
+/* index */
+.index-header {
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin: 0 0 1.5rem 0;
+  color: var(--darkgray);
+  margin-bottom: 1rem;
 }
 
-.index-list {
+.index-grid {
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
 }
 
-.index-row {
+.index-card {
+  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
+  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.index-link-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  padding: 1.4rem 0;
-  border-bottom: 1px solid var(--lightgray);
+  gap: 0.35rem;
+  padding: 1.1rem 1.3rem;
   text-decoration: none;
   color: inherit;
-  transition: padding-left 0.15s ease, border-color 0.15s ease;
 }
 
-.index-row:first-child {
-  border-top: 1px solid var(--lightgray);
-}
-
-.index-row:hover,
-.index-row:focus-visible {
-  padding-left: 0.75rem;
+.index-card:hover {
   border-color: var(--secondary);
-}
-
-.index-row:focus-visible {
-  outline: none;
-  background: color-mix(in srgb, var(--secondary) 5%, transparent);
+  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
+  transform: translateX(4px);
 }
 
 .index-title {
-  font-size: 1.4rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--darkgray);
-  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.arrow {
+  color: var(--secondary);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.index-card:hover .arrow {
+  opacity: 1;
 }
 
 .index-desc {
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: var(--gray);
   line-height: 1.5;
 }
 
-@media (max-width: 640px) {
-  .hero-title { font-size: 2.3rem; }
-  .top-nav { flex-direction: column; align-items: flex-start; }
-  .nav-links { gap: 1rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .index-row, .nav-links a, .nav-socials a {
-    transition: none;
-  }
+@media (max-width: 768px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-title { font-size: 2.2rem; }
 }
 </style>

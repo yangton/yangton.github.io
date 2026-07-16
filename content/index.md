@@ -111,19 +111,21 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 }
 
 .stat-card {
-  background: var(--light);
-  border: 1px solid var(--lightgray);
+  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
+  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
   border-radius: 12px;
   padding: 1.25rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.3rem;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .stat-card:hover {
   border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
   transform: translateY(-2px);
 }
 
@@ -184,10 +186,11 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 }
 
 .index-card {
-  background: var(--light);
-  border: 1px solid var(--lightgray);
+  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
+  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
   border-radius: 12px;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .index-link-wrapper {
@@ -201,6 +204,7 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 
 .index-card:hover {
   border-color: var(--secondary);
+  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
   transform: translateX(4px);
 }
 

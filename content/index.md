@@ -6,28 +6,19 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 <div class="portfolio-wrapper">
 
   <div class="hero">
-    <p class="hero-eyebrow">Offensive Security</p>
+    <p class="hero-eyebrow"><span class="prompt">$</span> whoami</p>
     <h1 class="hero-title">yangton</h1>
     <p class="hero-sub">AppSec Engineer &amp; Penetration Tester</p>
   </div>
 
-  <div class="stats-grid">
-    <div class="stat-card">
-      <span class="stat-number">3</span>
-      <span class="stat-label">Years Exp</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">2</span>
-      <span class="stat-label">Certs</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">HTB</span>
-      <span class="stat-label">Active</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">Web</span>
-      <span class="stat-label">Focus</span>
-    </div>
+  <div class="meta-line">
+    <span class="meta-item"><span class="meta-value">3</span> years exp</span>
+    <span class="meta-divider">/</span>
+    <span class="meta-item"><span class="meta-value">2</span> certs</span>
+    <span class="meta-divider">/</span>
+    <span class="meta-item">HTB active</span>
+    <span class="meta-divider">/</span>
+    <span class="meta-item">web focus</span>
   </div>
 
   <div class="cert-row">
@@ -37,27 +28,26 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
     <span class="cert-badge pending">OSWA</span>
   </div>
 
-  <h3 class="index-header">Directory Index</h3>
+  <div class="section-divider"></div>
 
-  <div class="index-grid">
-    <div class="index-card">
-      <a href="/Write-ups" class="index-link-wrapper">
-        <div class="index-title">Write-ups <span class="arrow">→</span></div>
-        <div class="index-desc">Lab post-mortems, CTF solutions, and exploit chain analysis.</div>
-      </a>
-    </div>
-    <div class="index-card">
-      <a href="/Methodology" class="index-link-wrapper">
-        <div class="index-title">Methodology <span class="arrow">→</span></div>
-        <div class="index-desc">Personal pentesting workflows, checklists, and mindmaps.</div>
-      </a>
-    </div>
-    <div class="index-card">
-      <a href="/Insights" class="index-link-wrapper">
-        <div class="index-title">Insights <span class="arrow">→</span></div>
-        <div class="index-desc">Notes on the current threat landscape and AppSec trends.</div>
-      </a>
-    </div>
+  <h3 class="index-header"><span class="prompt">$</span> ls ~/notes</h3>
+
+  <div class="index-list">
+    <a href="/Write-ups" class="index-row">
+      <span class="index-title">Write-ups</span>
+      <span class="index-desc">Lab post-mortems, CTF solutions, and exploit chain analysis.</span>
+      <span class="arrow">→</span>
+    </a>
+    <a href="/Methodology" class="index-row">
+      <span class="index-title">Methodology</span>
+      <span class="index-desc">Personal pentesting workflows, checklists, and mindmaps.</span>
+      <span class="arrow">→</span>
+    </a>
+    <a href="/Insights" class="index-row">
+      <span class="index-title">Insights</span>
+      <span class="index-desc">Notes on the current threat landscape and AppSec trends.</span>
+      <span class="arrow">→</span>
+    </a>
   </div>
 
 </div>
@@ -65,195 +55,179 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 <style>
 .portfolio-wrapper {
   color: var(--dark);
-  max-width: 720px;
+  max-width: 640px;
 }
 
 /* hero */
 .hero {
-  padding: 0.5rem 0 2rem 0;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--lightgray);
+  padding: 0.5rem 0 1.75rem 0;
 }
 
 .hero-eyebrow {
   font-family: var(--codeFont);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+  margin: 0 0 0.9rem 0;
+}
+
+.prompt {
   color: var(--secondary);
-  margin: 0 0 0.6rem 0;
+  font-weight: 700;
+  margin-right: 0.4em;
 }
 
 .hero-title {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin: 0 0 0.5rem 0;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.4rem 0;
   color: var(--darkgray);
   line-height: 1.1;
 }
 
 .hero-sub {
   color: var(--gray);
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0;
   line-height: 1.5;
 }
 
-/* stats */
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+
+.meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--codeFont);
+  font-size: 0.82rem;
+  color: var(--gray);
   margin: 0 0 1.5rem 0;
 }
 
-.stat-card {
-  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
-  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
-  border-radius: 12px;
-  padding: 1.25rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.3rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.stat-card:hover {
-  border-color: var(--secondary);
-  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
-  transform: translateY(-2px);
-}
-
-.stat-number {
-  font-family: var(--codeFont);
-  font-size: 1.5rem;
-  font-weight: 700;
+.meta-value {
   color: var(--secondary);
+  font-weight: 700;
 }
 
-.stat-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray);
-  font-weight: 600;
+.meta-divider {
+  color: var(--lightgray);
 }
 
-/* certifications */
+
 .cert-row {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 2rem 0;
 }
 
 .cert-badge {
   font-family: var(--codeFont);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
 }
 
 .cert-badge.achieved {
-  border: 1px solid var(--secondary);
+  border: 1px solid color-mix(in srgb, var(--secondary) 45%, transparent);
   color: var(--secondary);
-  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+  background: transparent;
 }
 
 .cert-badge.pending {
-  border: 1px dashed color-mix(in srgb, var(--gray) 50%, var(--lightgray));
+  border: 1px dashed var(--lightgray);
   color: var(--gray);
 }
 
-/* index */
+
+.section-divider {
+  height: 1px;
+  background: var(--lightgray);
+  margin: 0 0 2rem 0;
+}
+
 .index-header {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--darkgray);
-  margin-bottom: 1rem;
+  font-family: var(--codeFont);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray);
+  margin-bottom: 0.75rem;
 }
 
-.index-grid {
+
+.index-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
 }
 
-.index-card {
-  background: color-mix(in srgb, var(--secondary) 7%, var(--light));
-  border: 1px solid color-mix(in srgb, var(--secondary) 22%, var(--lightgray));
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.index-link-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  padding: 1.1rem 1.3rem;
+.index-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 20px;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 0.25rem;
+  border-bottom: 1px solid var(--lightgray);
   text-decoration: none;
   color: inherit;
-  border-radius: 12px;
+  transition: padding-left 0.15s ease, border-color 0.15s ease;
 }
 
-/* focus widoczny dla nawigacji klawiaturą (Tab) — bez tego karty są
-   niedostępne dla osób nieużywających myszy, mimo że wyglądają na klikalne */
-.index-link-wrapper:focus-visible {
-  outline: 2px solid var(--secondary);
-  outline-offset: 2px;
+.index-row:first-child {
+  border-top: 1px solid var(--lightgray);
 }
 
-.index-card:hover,
-.index-card:focus-within {
+.index-row:hover,
+.index-row:focus-visible {
+  padding-left: 0.6rem;
   border-color: var(--secondary);
-  box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
-  transform: translateX(4px);
+}
+
+.index-row:focus-visible {
+  outline: none;
+  background: color-mix(in srgb, var(--secondary) 5%, transparent);
 }
 
 .index-title {
-  font-size: 1.05rem;
-  font-weight: 700;
+  font-family: var(--codeFont);
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--darkgray);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+}
+
+.index-desc {
+  font-size: 0.88rem;
+  color: var(--gray);
+  line-height: 1.4;
 }
 
 .arrow {
   color: var(--secondary);
-  opacity: 0.35;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  opacity: 0;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  text-align: right;
 }
 
-/* na dotyku/mobile nie ma :hover, więc strzałka zostawała niewidoczna
-   na stałe — teraz jest zawsze lekko widoczna i tylko "ożywa" na hover */
-.index-card:hover .arrow,
-.index-card:focus-within .arrow {
+.index-row:hover .arrow,
+.index-row:focus-visible .arrow {
   opacity: 1;
   transform: translateX(2px);
 }
 
-.index-desc {
-  font-size: 0.9rem;
-  color: var(--gray);
-  line-height: 1.5;
+@media (max-width: 640px) {
+  .hero-title { font-size: 2.1rem; }
+  .meta-line { font-size: 0.78rem; }
+  .index-row {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .arrow { display: none; }
 }
 
-@media (max-width: 768px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-title { font-size: 2.2rem; }
-}
-
-/* dla osób z ustawieniem "ogranicz animacje" w systemie —
-   accessibility, nie tylko kosmetyka */
 @media (prefers-reduced-motion: reduce) {
-  .stat-card, .index-card, .arrow {
+  .index-row, .arrow {
     transition: none;
   }
 }

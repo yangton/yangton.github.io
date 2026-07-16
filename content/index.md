@@ -64,15 +64,13 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 
 <style>
 .portfolio-wrapper {
-  /* Uses Quartz's own theme tokens (incl. the default purple --secondary)
-     so this block always matches the site's active theme and light/dark toggle. */
   color: var(--dark);
   max-width: 720px;
 }
 
 /* hero */
 .hero {
-  padding: 0 0 2rem 0;
+  padding: 0.5rem 0 2rem 0;
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--lightgray);
 }
@@ -93,13 +91,14 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
   letter-spacing: -0.02em;
   margin: 0 0 0.5rem 0;
   color: var(--darkgray);
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .hero-sub {
   color: var(--gray);
   font-size: 1.1rem;
   margin: 0;
+  line-height: 1.5;
 }
 
 /* stats */
@@ -167,7 +166,7 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 }
 
 .cert-badge.pending {
-  border: 1px dashed var(--lightgray);
+  border: 1px dashed color-mix(in srgb, var(--gray) 50%, var(--lightgray));
   color: var(--gray);
 }
 
@@ -200,9 +199,18 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
   padding: 1.1rem 1.3rem;
   text-decoration: none;
   color: inherit;
+  border-radius: 12px;
 }
 
-.index-card:hover {
+/* focus widoczny dla nawigacji klawiaturą (Tab) — bez tego karty są
+   niedostępne dla osób nieużywających myszy, mimo że wyglądają na klikalne */
+.index-link-wrapper:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+.index-card:hover,
+.index-card:focus-within {
   border-color: var(--secondary);
   box-shadow: 0 4px 12px rgba(123, 94, 167, 0.15);
   transform: translateX(4px);
@@ -219,12 +227,16 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 
 .arrow {
   color: var(--secondary);
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  opacity: 0.35;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.index-card:hover .arrow {
+/* na dotyku/mobile nie ma :hover, więc strzałka zostawała niewidoczna
+   na stałe — teraz jest zawsze lekko widoczna i tylko "ożywa" na hover */
+.index-card:hover .arrow,
+.index-card:focus-within .arrow {
   opacity: 1;
+  transform: translateX(2px);
 }
 
 .index-desc {
@@ -236,5 +248,13 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 @media (max-width: 768px) {
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-title { font-size: 2.2rem; }
+}
+
+/* dla osób z ustawieniem "ogranicz animacje" w systemie —
+   accessibility, nie tylko kosmetyka */
+@media (prefers-reduced-motion: reduce) {
+  .stat-card, .index-card, .arrow {
+    transition: none;
+  }
 }
 </style>

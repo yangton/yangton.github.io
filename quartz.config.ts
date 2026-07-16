@@ -24,24 +24,24 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#fafafa",
-          lightgray: "#9889b0",
-          gray: "#9b8bb0",
-          darkgray: "#554869",
-          dark: "#1a0f2e",
-          secondary: "#7B5EA7",
-          tertiary: "#a487d4",
+          light: "#faf9fc",       // tło strony — leciutki fioletowy odcień zamiast płaskiej szarości
+          lightgray: "#e6e0f0",   // obramowania/dividery — wyraźnie jaśniejsze niż "gray"
+          gray: "#8a7a9e",        // przygaszony tekst (daty, opisy) — teraz odróżnialny od lightgray
+          darkgray: "#4a3d61",    // nagłówki
+          dark: "#1a0f2e",        // główny tekst — najwyższy kontrast
+          secondary: "#7B5EA7",   // akcent (linki, hover)
+          tertiary: "#a487d4",    // akcent drugorzędny
           highlight: "rgba(123, 94, 167, 0.15)",
           textHighlight: "#7B5EA755",
         },
         darkMode: {
-          light: "#0d0d0f",
-          lightgray: "#1e1a2e",
-          gray: "#6b5b95",
-          darkgray: "#c4b8d9",
-          dark: "#f0ecf8",
-          secondary: "#9b7cc4",
-          tertiary: "#7B5EA7",
+          light: "#0d0d0f",       // tło strony
+          lightgray: "#2a2440",   // obramowania — jaśniejsze niż wcześniej (było za blisko "light")
+          gray: "#8a78b5",        // przygaszony tekst — podniesiony dla czytelności na ciemnym tle
+          darkgray: "#c4b8d9",    // nagłówki
+          dark: "#f0ecf8",        // główny tekst
+          secondary: "#9b7cc4",   // akcent
+          tertiary: "#7B5EA7",    // akcent drugorzędny
           highlight: "rgba(107, 91, 149, 0.15)",
           textHighlight: "#6b5b9555",
         },
@@ -76,8 +76,8 @@ const config: QuartzConfig = {
       Plugin.FolderPage(),
       Plugin.TagPage(),
       Plugin.ContentIndex({
-        enableSiteMap: false,
-        enableRSS: false,
+        enableSiteMap: true,   // włączone: pomaga w SEO / indeksowaniu, zero minusów
+        enableRSS: true,       // włączone: ktoś może chcieć śledzić nowe write-upy przez czytnik RSS
       }),
       Plugin.Assets(),
       Plugin.Static(),

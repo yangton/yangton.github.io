@@ -1,5 +1,5 @@
 ---
-title: "GraphQL Introspection Bypass & BFLA to Plaintext Credentials"
+title: "Sokudo - GraphQL Introspection Bypass & BFLA to Plaintext Credentials"
 description: "Discovered a GraphQL endpoint via traffic mapping in Burp Suite. Bypassed disabled introspection using field suggestions to map the schema, leading to an unauthorized dump of all user credentials."
 date: 2026-06-17
 tags:

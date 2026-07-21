@@ -1,8 +1,9 @@
 ---
-title: "Path Parameter SQL Injection to Full Database Dump in an Appointment Booking App"
+title: "MedNote-SQLi-21.07.2026"
 description: "Recon on a patient portal's appointment-cancellation flow revealed an unsanitized ID segment in the URL path. sqlmap confirmed boolean-based and UNION-based SQLi against SQLite, leading to a full dump of the users table and the flag."
 date: 2026-07-21
 tags:
+  - mednote
   - bugforge
   - web
   - sqli

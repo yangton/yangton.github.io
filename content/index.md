@@ -3,218 +3,214 @@ title: "yangton // Security Research"
 description: "AppSec Engineer & Penetration Tester — write-ups, methodology, and offensive security research."
 ---
 
-<div class="portfolio-wrapper">
+<div class="jm-wrapper">
 
-  <div class="hero">
-    <p class="hero-eyebrow">// offensive security</p>
-    <h1 class="hero-title">yangton</h1>
-    <p class="hero-sub">AppSec Engineer &amp; Penetration Tester</p>
+  <p class="jm-status">signal: online // engagements: closed // focus: web appsec</p>
+
+  <h1 class="jm-headline">Break It. Understand It. Write It Down.</h1>
+
+  <p class="jm-cursor"><span class="jm-blink">$</span></p>
+
+  <p class="jm-bio">:P</p>
+
+  <hr class="jm-rule" />
+
+  <h2 class="jm-h2">About</h2>
+  <p class="jm-prose">yangton is the research log of an AppSec engineer working the offensive side of web security. The rule here is simple: break it, understand it, write it down.</p>
+  <p class="jm-prose">Write-ups covers lab post-mortems, CTF solutions, and exploit chain analysis from HackTheBox and self-built targets. Methodology is the personal playbook — workflows, checklists, and mindmaps used on real engagements. Insights tracks the current threat landscape and where AppSec is heading.</p>
+
+  <hr class="jm-rule" />
+
+  <h2 class="jm-h2">Featured</h2>
+  <div class="jm-featured">
+    <a href="/Write-ups" class="jm-feat-item">
+      <span class="jm-feat-icon">⚔</span>
+      <span class="jm-feat-text"><strong>Write-ups</strong> — Lab post-mortems, CTF solutions, and exploit chain analysis. <span class="jm-arrow">→</span></span>
+    </a>
+    <a href="/Methodology" class="jm-feat-item">
+      <span class="jm-feat-icon">⚙</span>
+      <span class="jm-feat-text"><strong>Methodology</strong> — Personal pentesting workflows, checklists, and mindmaps. <span class="jm-arrow">→</span></span>
+    </a>
+    <a href="/Insights" class="jm-feat-item">
+      <span class="jm-feat-icon">◈</span>
+      <span class="jm-feat-text"><strong>Insights</strong> — Notes on the current threat landscape and AppSec trends. <span class="jm-arrow">→</span></span>
+    </a>
   </div>
 
-  <div class="stats-grid">
-    <div class="stat-card">
-      <span class="stat-number">3</span>
-      <span class="stat-label">Years Exp</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">2</span>
-      <span class="stat-label">Certs</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">HTB</span>
-      <span class="stat-label">Active</span>
-    </div>
-    <div class="stat-card">
-      <span class="stat-number">Web</span>
-      <span class="stat-label">Focus</span>
-    </div>
-  </div>
+  <hr class="jm-rule" />
 
-  <div class="cert-row">
-    <span class="cert-badge achieved">BSCP</span>
-    <span class="cert-badge achieved">CWES</span>
-    <span class="cert-badge pending">CWEE</span>
-    <span class="cert-badge pending">CPTS</span>
-    <span class="cert-badge pending">OSWA</span>
-  </div>
+  <h2 class="jm-h2">Progress</h2>
+  <p class="jm-stat-line">Certifications <span class="jm-stat-num">2 / 4</span></p>
+  <p class="jm-stat-line">HackTheBox <span class="jm-stat-num">Active</span></p>
+  <p class="jm-stat-line">Years in AppSec <span class="jm-stat-num">3</span></p>
 
-  <h3 class="index-header">Directory Index</h3>
+  <hr class="jm-rule" />
 
-  <div class="index-grid">
-    <a href="/Write-ups" class="index-card">
-      <div class="index-title">Write-ups <span class="arrow">→</span></div>
-      <div class="index-desc">Labs, CTF solutions, and exploit chain analysis.</div>
-    </a>
-    <a href="/Methodology" class="index-card">
-      <div class="index-title">Methodology <span class="arrow">→</span></div>
-      <div class="index-desc">Personal pentesting workflows, checklists, and mindmaps.</div>
-    </a>
-    <a href="/Insights" class="index-card">
-      <div class="index-title">Blog <span class="arrow">→</span></div>
-      <div class="index-desc">Some things :@</div>
-    </a>
+  <h2 class="jm-h2">Certifications</h2>
+  <div class="jm-cert-row">
+    <span class="jm-badge done">BSCP</span>
+    <span class="jm-badge done">CWES</span>
+    <span class="jm-badge pending">CWEE</span>
+    <span class="jm-badge pending">CPTS</span>
+    <span class="jm-badge pending">OSWA</span>
   </div>
 
 </div>
 
 <style>
-.portfolio-wrapper {
+.jm-wrapper {
   color: var(--dark);
-  max-width: 720px;
+  max-width: 680px;
   font-family: var(--codeFont);
 }
 
-
-.hero {
-  padding: 0 0 1.75rem 0;
-  margin-bottom: 1.75rem;
-  border-bottom: 1px solid var(--lightgray);
-}
-
-.hero-eyebrow {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+.jm-status {
+  font-size: 0.78rem;
   color: var(--gray);
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 1.25rem 0;
+  letter-spacing: 0.02em;
 }
 
-.hero-title {
-  font-size: 2.5rem;
+.jm-headline {
+  font-size: 2.1rem;
   font-weight: 700;
   letter-spacing: -0.01em;
-  margin: 0 0 0.4rem 0;
+  line-height: 1.15;
   color: var(--darkgray);
-  line-height: 1;
+  margin: 0 0 1rem 0;
 }
 
-.hero-sub {
+.jm-cursor {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: var(--secondary);
+}
+
+.jm-blink {
+  animation: jm-blink 1.1s step-end infinite;
+}
+
+@keyframes jm-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.jm-bio {
+  font-size: 0.95rem;
+  line-height: 1.7;
   color: var(--gray);
-  font-size: 1rem;
-  margin: 0;
-}
-
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1px;
-  background: var(--lightgray);
-  border: 1px solid var(--lightgray);
   margin: 0 0 1.5rem 0;
 }
 
-.stat-card {
-  background: var(--light);
-  padding: 1rem 0.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
+.jm-rule {
+  border: none;
+  border-top: 1px solid var(--lightgray);
+  margin: 1.75rem 0;
 }
 
-.stat-number {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--secondary);
-}
-
-.stat-label {
-  font-size: 0.65rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gray);
-}
-
-
-.cert-row {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin: 0 0 2.25rem 0;
-}
-
-.cert-badge {
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding: 0.3rem 0.7rem;
-  border-radius: 2px;
-}
-
-.cert-badge.achieved {
-  border: 1px solid var(--secondary);
-  color: var(--secondary);
-}
-
-.cert-badge.pending {
-  border: 1px solid var(--lightgray);
-  color: var(--gray);
-}
-
-
-.index-header {
+.jm-h2 {
   font-size: 1rem;
   font-weight: 700;
   color: var(--darkgray);
-  margin-bottom: 0.75rem;
+  margin: 0 0 0.85rem 0;
 }
 
-.index-grid {
-  display: flex;
-  flex-direction: column;
+.jm-prose {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: var(--gray);
+  margin: 0 0 0.9rem 0;
 }
 
-.index-card {
+.jm-prose:last-child {
+  margin-bottom: 0;
+}
+
+.jm-featured {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.9rem 0;
+  gap: 0.75rem;
+}
+
+.jm-feat-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
   text-decoration: none;
   color: inherit;
-  border-bottom: 1px solid var(--lightgray);
-  transition: padding-left 0.15s ease;
 }
 
-.index-card:first-child {
-  border-top: 1px solid var(--lightgray);
-}
-
-.index-card:hover {
-  padding-left: 0.5rem;
-}
-
-.index-card:hover .index-title {
+.jm-feat-icon {
   color: var(--secondary);
+  font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
-.index-title {
-  font-size: 0.95rem;
-  font-weight: 600;
+.jm-feat-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.jm-feat-text strong {
   color: var(--darkgray);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: color 0.15s ease;
+  font-weight: 600;
 }
 
-.arrow {
+.jm-arrow {
   color: var(--secondary);
   opacity: 0;
   transition: opacity 0.15s ease;
 }
 
-.index-card:hover .arrow {
+.jm-feat-item:hover .jm-arrow {
   opacity: 1;
 }
 
-.index-desc {
-  font-size: 0.85rem;
+.jm-feat-item:hover strong {
+  color: var(--secondary);
+}
+
+.jm-stat-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
   color: var(--gray);
-  line-height: 1.5;
+  margin: 0 0 0.6rem 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--lightgray);
+  max-width: 320px;
+}
+
+.jm-stat-num {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.jm-cert-row {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.jm-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+}
+
+.jm-badge.done {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.jm-badge.pending {
+  border: 1px solid var(--lightgray);
+  color: var(--gray);
 }
 
 @media (max-width: 768px) {
-  .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-title { font-size: 2rem; }
+  .jm-headline { font-size: 1.7rem; }
 }
 </style>

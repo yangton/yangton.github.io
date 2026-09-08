@@ -13,13 +13,6 @@ description: "AppSec Engineer & Penetration Tester — write-ups, methodology, a
 
   <p class="jm-bio">:P</p>
 
-  <hr class="jm-rule" />
-
-  <h2 class="jm-h2">About</h2>
-  <p class="jm-prose">yangton is the research log of an AppSec engineer working the offensive side of web security. The rule here is simple: break it, understand it, write it down.</p>
-  <p class="jm-prose">Write-ups covers lab post-mortems, CTF solutions, and exploit chain analysis from HackTheBox and self-built targets. Methodology is the personal playbook — workflows, checklists, and mindmaps used on real engagements. Insights tracks the current threat landscape and where AppSec is heading.</p>
-
-  <hr class="jm-rule" />
 
   <h2 class="jm-h2">Featured</h2>
   <div class="jm-featured">
